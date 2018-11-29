@@ -119,6 +119,7 @@ void chaosGame::play() {
 
 void chaosGame::noRestrictions() {
     int choice(rand() % this->points.size());
+    this->lastChoice = choice;
     updateCurrentPoint(this->points[choice]);
     drawCurrentPoint();
 }
@@ -141,6 +142,25 @@ void chaosGame::updateCurrentPoint(point newPoint) {
 void chaosGame::drawCurrentPoint() {
     sf::RectangleShape cell(sf::Vector2f(1, 1));
     cell.setPosition(this->currentPoint.x, this->currentPoint.y);
+    if (this->points.size() <= 5) {
+        switch (this->lastChoice) {
+            case 0:
+                cell.setFillColor(sf::Color::Blue);
+                break;
+            case 1:
+                cell.setFillColor(sf::Color::White);
+                break;
+            case 2:
+                cell.setFillColor(sf::Color::Green);
+                break;
+            case 3:
+                cell.setFillColor(sf::Color::Magenta);
+                break;
+            case 4:
+                cell.setFillColor(sf::Color::Yellow);
+                break;
+        }
+    }
     this->window->draw(cell);
 }
 

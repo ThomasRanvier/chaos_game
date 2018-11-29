@@ -13,11 +13,11 @@ const int ERASER_RADIUS = 10;
 //2: Anti-clockwise, not one place away from previous
 //3: Not 2 places away
 //4: Not in drawn area
-const int MODE = 4;
+const int MODE = 2;
 
 //SHAPE, replaces NUMBER_OF_POINTS
 //0: Random with NUMBER_OF_POINTS
 //1: Triangle
-//2: Polygon
+//2: Rectangle
 //3: Pentagon
 const int SHAPE = 2;
