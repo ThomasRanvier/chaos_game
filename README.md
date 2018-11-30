@@ -9,23 +9,30 @@ At each iteration a vertex is selected and the point becomes the middle of the l
 Several restrictions can be applied to the game.
 
 Obtained result using a triangle and no restrictions:
-![01](./screenshots/01.png)
+
+<img src="./screenshots/01.png" width="350">
 
 Not selecting the same vertex twice in a row using, a square:
-![12](./screenshots/12.png)
+
+<img src="./screenshots/12.png" width="350">
 
 Not selecting the same vertex twice in a row using, a pentagon:
-![13](./screenshots/13.png)
+
+<img src="./screenshots/13.png" width="350">
 
 Anti-clockwise, current vertex cannot be one place away from the previous one, using a square:
-![22](./screenshots/22.png)
+
+<img src="./screenshots/22.png" width="350">
 
 Anti-clockwise, current vertex cannot be one place away from the previous one, using a pentagon:
-![23](./screenshots/23.png)
+
+<img src="./screenshots/23.png" width="350">
 
 The current vertex cannot be two place away from the previous one in either directions, using a rectangle:
-![32](./screenshots/32.png)
+
+<img src="./screenshots/32.png" width="350">
 
 When we prevent the point from landing on a particular region of the square, the shape will be reproduced as a fractal in other places of the square.
 Obtained result in a square with the restricted zone appearing in red.
-![42](./screenshots/42.png)
+
+<img src="./screenshots/42.png" width="350">
